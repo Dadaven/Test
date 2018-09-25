@@ -31,8 +31,7 @@ namespace Sketch2Code.AI
             _projectName = projectName;
             this._trainingApi = new TrainingApi() { ApiKey = _trainingApiKey };
 
-            _visionClient = new VisionServiceClient(ConfigurationManager.AppSettings["HandwrittenTextSubscriptionKey"],
-                ConfigurationManager.AppSettings["HandwrittenTextApiEndpoint"]);
+           
         }
         
         protected async Task<Project> GetProjectAsync(string projectName)
